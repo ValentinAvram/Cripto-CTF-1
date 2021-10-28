@@ -5,7 +5,7 @@ La obtención en estos desafios de la flag puede ir desde una simple traducción
 
 En nuestro caso, las flags de los desafios deberán introducirse con el formato:
 ```
-flag{**FlagEspecifica**}
+flag{FlagEspecifica}
 ```
 
 ## Utilidades
