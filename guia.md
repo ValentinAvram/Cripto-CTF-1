@@ -85,7 +85,7 @@ Ahora, sabemos que la contraseña del **protected.zip** es "twilight". Descompri
 
 ![[c4_3.png]](/img/c4_3.png)
 
-Con esto, ya tenemos todas las piezas del rompecabezas. Para obtener la flag, desciframos el contenido de **challenge4.txt** a partir de Base64, y el resultado, otro descifrado, pero desde "XOR", usando como clave el contenido de **key.txt**.
+Con esto, ya tenemos todas las piezas del rompecabezas. Para obtener la flag, desciframos el contenido de **challenge4.txt** a partir de Base64, y el resultado, se vuelve a descifrar, pero desde "XOR", usando como clave el contenido de **key.txt**.
 En este caso, es recomendable el uso de [CyberChef](https://gchq.github.io/CyberChef/), ya que nos permite encadenar distintos descifrados, de diferentes métodos.
 
 ![[c4_4.png]](/img/c4_4.png)
