@@ -1,5 +1,5 @@
 # Desafíos de Criptografía
-El objetivo de estos desafíos es, a partir de un mensaje encriptado, encontrar su significado real, lo que llamaremos "flag".
+El objetivo de estos desafíos es, a partir de un mensaje cifrado, encontrar su significado real, lo que llamaremos "flag".
 
 En estos desafios, la obtención de la flag puede ir desde una simple traducción, a tener en cuenta como se almacena la información de usuarios en sistemas UNIX, cracking de contraseñas, entre otros.
 
@@ -89,5 +89,22 @@ En este caso, es recomendable el uso de [CyberChef](https://gchq.github.io/Cyber
 
 ![[c4_4.png]](/img/c4_4.png)
 
-
 ## Challenge 5
+Para este desafio, usaremos el archivo **net2.pcapng**, proporcionado en el Challenge 3 del apartado Red. Este archivo lo visualizaremos usando Wireshark, por lo que nos será útil conocer la herramienta. Dentro de toda la información contenida en el archivo **net2.pcapng**, nos interesará ir al paquete 49.
+
+![[c5_1.png]](/img/c5_1.png)
+
+En la imagen, podemos ver que desde la dirección 10.0.2.15 se ha enviado un archivo usando el protocolo FTP a la dirección 10.0.2.4, ambas en la misma red privada. El archivo es **ThisIsReallyImportant.txt**, y su contenido lo podemos ver desde el propio Wireshark.
+Su contenido, entre otras cosas, tiene una linea que nos recuerda, una vez mas, a un hash.
+
+AÑADIR LINEA
+Desencriptamos el hash, y el resultado nos indica el siguiente paso.
+![[c5_2.png]](/img/c5_2.png)
+
+AÑADIR RESULTADO
+Por ultimo, el resultado antes obtenido, lo traducimos del Hexadecimal:
+
+![[c5_3.png]](/img/c5_3.png)
+
+El resultado es:
+AÑADIR FLAG
