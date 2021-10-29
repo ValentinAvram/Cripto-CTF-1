@@ -100,14 +100,20 @@ Este archivo lo visualizaremos usando Wireshark, por lo que nos será útil cono
 En la imagen, podemos ver que desde la dirección 10.0.2.15 se ha enviado un archivo usando el protocolo FTP a la dirección 10.0.2.4, ambas en la misma red privada. El archivo es **ThisIsReallyImportant.txt**, y su contenido lo podemos ver desde el propio Wireshark.
 Su contenido, entre otras cosas, tiene una linea que nos recuerda, una vez mas, a un hash.
 
-AÑADIR LINEA
+```
+BRUDAgk7NjA6AAoeFg1ISgQ=
+```
 Desencriptamos el hash, y el resultado nos indica el siguiente paso.
 ![[c5_2.png]](/img/c5_2.png)
 
-AÑADIR RESULTADO
+```
+BRUDAgk7NjA6AAoeFg1ISgQ=
+```
 Por ultimo, el resultado antes obtenido, lo traducimos del Hexadecimal:
 
 ![[c5_3.png]](/img/c5_3.png)
 
 El resultado es:
-AÑADIR FLAG
+```
+asdf
+```
