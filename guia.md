@@ -101,13 +101,15 @@ En la imagen, podemos ver que desde la dirección 10.0.2.15 se ha enviado un arc
 Su contenido, entre otras cosas, tiene una linea que nos recuerda, una vez mas, a un hash.
 
 ```
-BRUDAgk7NjA6AAoeFg1ISgQ=
+admin:$1$2b00042f7481c7b056c4b410d28f33cf:13064:0:99999:7:::\n
 ```
+
 Desencriptamos el hash, y el resultado nos indica el siguiente paso.
 ![[c5_2.png]](/img/c5_2.png)
 
+El contenido es:
 ```
-BRUDAgk7NjA6AAoeFg1ISgQ=
+$HEX[617364660a]
 ```
 Por ultimo, el resultado antes obtenido, lo traducimos del Hexadecimal:
 
