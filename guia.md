@@ -51,7 +51,7 @@ Muy sencilla:
 flag{uu_decode_freestyle}
 ```
 ## Challenge 3
-Descargamos el archivo **challenge3.txt**, cuyo contenido nos recuerda a como los sistemas UNIX almacenan la información referente a los usuarios del sistema.
+Descargamos el archivo **challenge3.txt**, cuyo contenido nos recuerda a cómo los sistemas UNIX almacenan la información referente a los usuarios del sistema.
 ![[c3_1.png]](/img/c3_1.png)
 
 Como se nos pide la flag relativa al administrador, desencriptamos su hash.
