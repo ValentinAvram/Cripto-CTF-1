@@ -36,7 +36,7 @@ La flag del challenge es:
 ```
 
 ## Challenge 2
-Este desafio es muy parecido al Challenge 1, pero cambiando la forma en que se cifra. Siendo el contenido del archivo **challenge2.txt** :
+Este desafío es muy parecido al Challenge 1, pero cambiando la forma en que se cifra. Siendo el contenido del archivo **challenge2.txt** :
 ```
 H375Y('-E;F-I;&QA.@H*9FQA9WMU=5]D96-O9&5?9G)E97-T>6QE?0``
 ```
@@ -77,11 +77,11 @@ Para obtener la contraseña del archivo comprimido, usaremos la herramienta “z
 
 ![[c4_1.png]](/img/c4_1.png)
 
-Luego, usaremos la herramienta "John The Ripper" para obtener la contraseña, a través del archivo antes creado vía "zip2john".
+Luego, usaremos la herramienta "John The Ripper" para obtener la contraseña por fuerza bruta, a través del archivo antes creado vía "zip2john".
 
 ![[c4_2.png]](/img/c4_2.png)
 
-Ahora, sabemos que la contraseña del **protected.zip** es "twilight". Descomprimimos **protected.zip** y tenemos un nuevo archivo, **key.txt**, cuyo contenido es "cyber"
+Ahora, sabemos que la contraseña del **protected.zip** es "twilight". Descomprimimos **protected.zip** y tenemos un nuevo archivo, **key.txt**, cuyo contenido es "cyber".
 
 ![[c4_3.png]](/img/c4_3.png)
 
@@ -91,7 +91,7 @@ En este caso, es recomendable el uso de [CyberChef](https://gchq.github.io/Cyber
 ![[c4_4.png]](/img/c4_4.png)
 
 ## Challenge 5
-Para este desafio, usaremos el archivo **net2.pcapng**, proporcionado en el Challenge 3 del apartado Red. 
+Para este desafío, usaremos el archivo **net2.pcapng**, proporcionado en el Challenge 3 del apartado Red. 
 
 Este archivo lo visualizaremos usando Wireshark, por lo que nos será útil conocer la herramienta. Dentro de toda la información contenida en el archivo **net2.pcapng**, nos interesará inspeccionar el paquete 49.
 
@@ -111,7 +111,7 @@ El contenido es:
 ```
 $HEX[617364660a]
 ```
-Por ultimo, el resultado antes obtenido, lo traducimos del Hexadecimal:
+Por último, el resultado antes obtenido, lo traducimos del Hexadecimal:
 
 ![[c5_3.png]](/img/c5_3.png)
 
