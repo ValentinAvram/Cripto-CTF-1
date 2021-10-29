@@ -73,7 +73,7 @@ Por otro lado, se nos da el archivo **challenge4.txt**, cuyo contenido es:
 ```
 BRUDAgk7NjA6AAoeFg1ISgQ=
 ```
-Para obtener la contraseña del archivo comprimido, usaremos la herramienta “zip2john” definiendo el nombre del archivo ZIP con contraseña y redireccionando la salida hacia un archivo el cual contendrá el hash extraído.
+Para obtener la contraseña del archivo comprimido, usaremos la herramienta “zip2john”, definiendo el nombre del archivo ZIP con contraseña y redireccionando la salida hacia un archivo el cual contendrá el hash extraído.
 
 ![[c4_1.png]](/img/c4_1.png)
 
