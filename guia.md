@@ -66,6 +66,7 @@ iloveyou99!
 
 ## Challenge 4
 A partir de aquí, los desafios empiezan a complicarse, pues nos será necesario usar otras herramientas, además de webs de descifrado.
+
 En este desafio, se nos da un archivo comprimido, **protected.zip**, el cual necesita una contraseña para ser descomprimido.
 Por otro lado, se nos da el archivo **challenge4.txt**, cuyo contenido es:
 
