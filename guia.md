@@ -1,7 +1,7 @@
 # Desafíos de Criptografía
 El objetivo de estos desafíos es, a partir de un mensaje encriptado, encontrar su significado real, lo que llamaremos "flag".
 
-La obtención en estos desafios de la flag puede ir desde una simple traducción, a tener en cuenta como se almacena la información de usuarios en sistemas UNIX, cracking de contraseñas, entre otros.
+En estos desafios, la obtención de la flag puede ir desde una simple traducción, a tener en cuenta como se almacena la información de usuarios en sistemas UNIX, cracking de contraseñas, entre otros.
 
 En nuestro caso, las flags de los desafios deberán introducirse con el formato:
 ```
@@ -28,6 +28,7 @@ Este desafío se resuelve traduciendo el contendido del archivo **challenge1.txt
 ![[c1_2.png]](/img/c1_2.png)
 
 El resultado es:
+
 ```
 La flag del challenge es: 
 
@@ -35,7 +36,20 @@ La flag del challenge es:
 ```
 
 ## Challenge 2
+Este desafio es muy parecido, pero cambiando la forma en que se cifra. Siendo el contenido del archivo **challenge2.txt** :
+```
+H375Y('-E;F-I;&QA.@H*9FQA9WMU=5]D96-O9&5?9G)E97-T>6QE?0``
+```
+Bastaría con hacer un descifrado desde UU-Encode:
+![[c2_2.png]](/img/c2_2.png)
 
+El resultado es:
+
+```
+Muy sencilla:
+
+flag{uu_decode_freestyle}
+```
 ## Challenge 3
 Descargamos el archivo **challenge3.txt**, cuyo contenido nos recuerda a como los sistemas UNIX almacenan la información referente a los usuarios del sistema.
 ![[c3_1.png]](/img/c3_1.png)
@@ -51,5 +65,29 @@ iloveyou99!
 ```
 
 ## Challenge 4
+A partir de aquí, los desafios empiezan a complicarse, pues nos será necesario usar otras herramientas, además de webs de descifrado.
+En este desafio, se nos da un archivo comprimido, **protected.zip**, el cual necesita una contraseña para ser descomprimido.
+Por otro lado, se nos da el archivo **challenge4.txt**, cuyo contenido es:
+
+```
+BRUDAgk7NjA6AAoeFg1ISgQ=
+```
+Para obtener la contraseña del archivo comprimido, usaremos la herramienta “zip2john” definiendo el nombre del archivo ZIP con contraseña y redireccionando la salida hacia un archivo el cual contendrá el hash extraído.
+
+![[c4_1.png]](/img/c4_1.png)
+
+Luego, usaremos la herramienta "John The Ripper" para obtener la contraseña, a través del archivo antes creado vía "zip2john".
+
+![[c4_2.png]](/img/c4_2.png)
+
+Ahora, sabemos que la contraseña del **protected.zip** es "twilight". Descomprimimos **protected.zip** y tenemos un nuevo archivo, **key.txt**, cuyo contenido es "cyber"
+
+![[c4_3.png]](/img/c4_3.png)
+
+Con esto, ya tenemos todas las piezas del rompecabezas. Para obtener la flag, desciframos el contenido de **challenge4.txt** a partir de Base64, y el resultado, otro descifrado, pero desde "XOR", usando como clave el contenido de **key.txt**.
+En este caso, es recomendable el uso de [CyberChef](https://gchq.github.io/CyberChef/), ya que nos permite encadenar distintos descifrados, de diferentes métodos.
+
+![[c4_4.png]](/img/c4_4.png)
+
 
 ## Challenge 5
