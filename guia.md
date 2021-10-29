@@ -93,7 +93,7 @@ En este caso, es recomendable el uso de [CyberChef](https://gchq.github.io/Cyber
 ## Challenge 5
 Para este desafio, usaremos el archivo **net2.pcapng**, proporcionado en el Challenge 3 del apartado Red. 
 
-Este archivo lo visualizaremos usando Wireshark, por lo que nos será útil conocer la herramienta. Dentro de toda la información contenida en el archivo **net2.pcapng**, nos interesará ir al paquete 49.
+Este archivo lo visualizaremos usando Wireshark, por lo que nos será útil conocer la herramienta. Dentro de toda la información contenida en el archivo **net2.pcapng**, nos interesará inspeccionar el paquete 49.
 
 ![[c5_1.png]](/img/c5_1.png)
 
