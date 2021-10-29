@@ -36,11 +36,11 @@ La flag del challenge es:
 ```
 
 ## Challenge 2
-Este desafio es muy parecido, pero cambiando la forma en que se cifra. Siendo el contenido del archivo **challenge2.txt** :
+Este desafio es muy parecido al Challenge 1, pero cambiando la forma en que se cifra. Siendo el contenido del archivo **challenge2.txt** :
 ```
 H375Y('-E;F-I;&QA.@H*9FQA9WMU=5]D96-O9&5?9G)E97-T>6QE?0``
 ```
-Bastaría con hacer un descifrado desde UU-Encode:
+Bastaría con hacer un decodificado desde UU-Encode:
 ![[c2_2.png]](/img/c2_2.png)
 
 El resultado es:
